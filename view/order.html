@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Place an Order</title>
+    <title>Order a Drink</title>
 </head>
 <body>
 
 <div class="container">
-    <h1>Place Your Order</h1>
-    <form id="orderForm">
-        <label for="cocktailSelect">Select a Cocktail:</label>
-        <select id="cocktailSelect">
-            <option value="Margarita">Margarita</option>
-            <option value="Martini">Martini</option>
-            <option value="Cosmopolitan">Cosmopolitan</option>
-            <option value="Mimosa">Mimosa</option>
-            <option value="Beer">Beer</option>
-            <option value="BloodyMary">Bloody Mary</option>
-
-        </select>
-        <button type="submit">Place Order</button>
-    </form>
+    <h1>Cocktail Menu</h1>
+    <div id="menu" class="menu"></div>
 </div>
 
 <footer>
     <button id="queueButton">View Order Queue</button>
+    <button id="backToIndex">Back to Index</button>
 </footer>
 
+<script src="../model/cocktailModel.js"></script>
 <script src="../controller/orderController.js"></script>
 </body>
 </html>
